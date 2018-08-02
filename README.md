@@ -6,11 +6,11 @@ Use it as a start point for new HTML/CSS projects.
 
  * SASS => CSS compile and watch
  * [nunjucks](https://mozilla.github.io/nunjucks/) -> HTML compile and watch
- * sourcemaps
+ * sourcemaps!
  * live reload ([browsersync](https://browsersync.io/))
  * notifications (`gulp-notify`)
- * postCSS: 
-   + [autoprefixer](https://github.com/postcss/autoprefixer)
+ * postCSS:
+   + [autoprefixer](https://github.com/postcss/autoprefixer) (and all the plugins that gives you)
    + SCSS [stylelint](https://stylelint.io/)
    + warnings about browser CSS support ([doiuse](https://github.com/anandthakker/doiuse))
    + css minification with [cssnano](http://cssnano.co/) (only in prod mode)

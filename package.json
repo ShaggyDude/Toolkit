@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^9.0.2",
     "browser-sync": "^2.18.8",
     "cssnano": "^3.10.0",
     "doiuse": "^3.0.0",
