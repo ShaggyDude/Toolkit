@@ -1,0 +1,33 @@
+@import 'nested';
+
+$menu-margin: .5rem;
+
+menu {
+  margin: 0;
+  margin-left:  -$menu-margin;
+  margin-right: -$menu-margin;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  > a {
+    display: block;
+    flex: 1;
+    padding: 1rem;
+    margin: 0 $menu-margin/2;
+    background: #eee;
+    color: #444;
+    background: #eee;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: .1s;
+
+    &:last-child {
+      flex: 2;
+    }
+    &:hover {
+      color: #eee;
+      background: #444;
+    }
+  }
+}

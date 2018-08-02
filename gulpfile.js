@@ -21,7 +21,6 @@ var syntax_scss = require('postcss-scss');
 var uncss = require('uncss').postcssPlugin;
 var glob = require("glob");
 
-
 /* to enable prod mode type 'gulp SOME-TASK --production' */
 var isProd = argv.production;
 
@@ -29,14 +28,14 @@ var isProd = argv.production;
  * See docs https://github.com/ai/browserslist
  * See exact browser list at http://browserl.ist
  */
-const SUPPORTED_BROWSERS = '> 1%, last 2 versions, ie >= 8';
+const SUPPORTED_BROWSERS = '> 2%, last 2 versions';
 
 var postcssReporterOptions = {clearAllMessages: true};
 var postcssPlugins = [
     autoprefixer({browsers: SUPPORTED_BROWSERS}),
     doiuse({
         browsers: SUPPORTED_BROWSERS,
-        ignore: ['flexbox'], // an optional array of features to ignore
+        ignore: ['outline','flexbox','rem','css-transitions','border-radius'], // an optional array of features to ignore
         onFeatureUsage: () => {
         } // do nothing. postCSS reported will output all info
     }),

@@ -3,11 +3,22 @@
 {% set title = 'Index' %}
 {% extends '_base.njk' %}
 {% block body %}
-    {{ Header() }}
 
-    <h1>Index</h1>
-    <p>Hello, {{ f.name.firstName() }} {{ f.name.lastName() }}!</p>
-    {% for i in range(1, 5) %}
-        <p>{{ f.lorem.words(randint(2,10)) }}</p>
-    {% endfor %}
+  {{ Header() }}
+
+  <h3>Home</h3>
+
+	<p>
+		Hey, {{ f.name.firstName() }}
+		see you {{ f.date.weekday() }}.
+	</p>
+
+	<p>
+		{{ f.date.recent() }}
+	</p>
+
+  {% for i in range(1, 3) %}
+    <p>{{ f.lorem.words(randint(2,30)) }}</p>
+  {% endfor %}
+
 {% endblock %}

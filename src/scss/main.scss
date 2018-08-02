@@ -1,34 +1,42 @@
+
 @import 'vars';
+@import 'include';
 
 body {
   color: $color-main;
-  font-size: 18px;
+  font-size: 16px;
+  display: grid;
+  font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+  max-width: 22rem;
+  margin: auto;
 }
 
-/* below code is unused in HTML and will de deleted by unCSS */
-
+// below code is unused in HTML and will de deleted by unCSS NOTE: only in production
 .block1 {
-  color: red;
+  color: rgb(200, 100, 0);
+  padding: 0;
 
-  &__element {
+  &:hover {
     color: blue;
   }
+}
 
-  // below properties are incorrect and should be validated by stylelint
-  INCORRECT_PROPERTY: 123;
-  font-size: INCORRECT_VALUE;
-  padding: 0px;
+.block11 {
+  color: rgb(200, 100, 0);
+  padding: 0;
+
+  &:hover {
+    color: blue;
+  }
 }
 
 .block2 {
-  color: red;
-  /* will be autoprefixed */
-  /* doiuse will NOT warn about browser support (we add flexbox to its ignore) */
+  outline: 1px solid rgb(200, 100, 0);
+  // will be autoprefixed
+  // doiuse will NOT warn about browser support (we add flexbox to its ignore)
   display: flex;
-  font-family: "BryantProRegular", 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 
 .img-fit {
-  /* doiuse will warn about browser support */
-  object-fit: scale-down;
+  //object-fit: scale-down;
 }

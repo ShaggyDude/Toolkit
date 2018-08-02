@@ -4,5 +4,8 @@
 {% extends '_base.njk' %}
 {% block body %}
     {{ Header() }}
-    <h1>About us</h1>
+    <h3>{{ f.lorem.words(randint(2,3)) }}</h3>
+    <p>{{ f.lorem.words(randint(20,30)) }}</p>
+    <p>{{ f.lorem.words(randint(20,50)) }}</p>
+    <p><img src={{ f.internet.avatar() }}></p>
 {% endblock %}
