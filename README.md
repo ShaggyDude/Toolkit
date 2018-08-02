@@ -31,5 +31,5 @@ gulp
 For production build, type
 
 ```
-gulp build --production
+gulp build --production...
 ```
